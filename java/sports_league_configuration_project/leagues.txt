@@ -1,0 +1,2 @@
+1,Barclay's Premier League,Soccer,2
+2,6 Nations,Rugby,1
