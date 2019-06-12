@@ -1,0 +1,6 @@
+0.05,Five Cent
+0.10,Ten Cent
+0.20,Twenty Cent
+0.50,Fifty Cent
+1.00,One Euro
+2.00,Two Euro

@@ -1,0 +1,4 @@
+Mars bars,1.3
+Snickers,1.2
+Dairy Milk,1.45
+Curly Wurly,1.2

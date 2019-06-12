@@ -1,0 +1,5 @@
+Vending Machine Operation Instructions
+By: Carla Warde (17204542) & Vincent Kiely (17236282)
+
+1. The Operator PIN codes to access the Operator Menu are stored in operators.txt - Please view this file to check the PINs.
+2. Compile the code and run the VendingMachineSimulation file to start the program. From there, the menu prompts will instruct you.
