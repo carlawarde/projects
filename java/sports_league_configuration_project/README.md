@@ -12,7 +12,7 @@ generate fixtures and results.</p>
 <li>Run the LeagueConfigurator.java and log-in using an admin log-in.</li>
 </ol>
 
-<h2>Usage:</h2>
+<h2>User Story:</h2>
 <ul>
 <li>An admin can log-in to the application using a password.</li>
 <li>An admin can create and configure a sports league.</li>
