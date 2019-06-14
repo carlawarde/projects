@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/new/sam">
+        <file>sammy-cup.jpg</file>
+        <file>dub.jpg</file>
+    </qresource>
+</RCC>
