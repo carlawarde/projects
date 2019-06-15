@@ -1,0 +1,53 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+char flipChar(char c);
+int main(int argc, char* argv[])
+{
+  char c;
+  FILE *from;
+  FILE *to;
+
+  from = fopen(argv[2], "r");
+  to = fopen(argv[3], "w");
+  if (from == NULL)
+  {
+    perror("file.txt");
+    exit(1);
+  }
+  int flipping = (strcmp(argv[1], "-f")==0);
+		  
+  /* file exists, so start reading */
+  while ((c = getc(from)) != EOF){
+    if(flipping)
+      putc(flipChar(c), to);
+    else
+      putc(c, to);
+  }
+
+  fclose(from);
+  fclose(to);
+
+  exit(0);
+}
+
+char flipChar(char c) {
+  int diff = 0;
+  if ('a' <= c && c <= 'z') {
+    diff = c -'a';
+    c = 'a'+(25-diff);
+    return c;
+      }
+  else if ('A' <= c && c <= 'Z') {
+    diff = c - 'A';
+    c = 'A'+(25-diff);
+    return c;
+      }
+  else if ('0' <= c && c <= '9') {
+    diff = c - '0';
+    c = '0' + (9 - diff);
+    return c;
+      }
+  
+  return c;
+}

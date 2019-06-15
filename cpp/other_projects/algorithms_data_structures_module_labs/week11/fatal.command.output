@@ -1,0 +1,11 @@
+mpow.cc: In function ‘int main(int, char**)’:
+mpow.cc:72:5: error: ‘power’ was not declared in this scope
+     power = atoi(argv[1]);
+     ^~~~~
+mpow.cc:78:6: error: ‘power’ was not declared in this scope
+   if(power < 0) {
+      ^~~~~
+mpow.cc: In function ‘void multMat(sparseMat, sparseMat, sparseMat&)’:
+mpow.cc:149:23: error: cannot convert ‘sparseMat {aka std::vector<std::__cxx11::list<nz> >}’ to ‘int’ for argument ‘2’ to ‘void transpMat(sparseMat, int, sparseMat&)’
+   transpMat(m2, transp); // find transpose of second matrix, m2
+                       ^
