@@ -3,7 +3,7 @@
 <p><b>Description: </b>In this application the user can choose between a CLI and GUI menu, and then can interact with the programme as either an admin or user. An admin is required to log-in before they can access the admin menu from where they can add products to the machine, view products and remove/add coins to the machine. A user can buy products and insert and eject coins from the vending machine.</p>
 <p><b>Last Updated: </b>2018-12-12</p>
 <p><b>Author(s): </b>Carla Warde, Vincent Kiely</p>
-<p><b>Utilised: </b>Java Programming, Object Orienatated Programming, Java FX, Text File Manipulation</p>
+<p><b>Utilised: </b>Java Programming, Object Orientated Programming, Java FX, Text File Manipulation</p>
 
 <h2>Instructions:</h2>
 <ol>
