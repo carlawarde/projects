@@ -1,0 +1,93 @@
+{
+  "project_info": {
+    "project_number": "734656877119",
+    "firebase_url": "https://brits-out-11ee1.firebaseio.com",
+    "project_id": "brits-out-11ee1",
+    "storage_bucket": "brits-out-11ee1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:734656877119:android:fe7c8718fdb68e10691e8a",
+        "android_client_info": {
+          "package_name": "com.example.flittybrit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "734656877119-qua2d89ikg8t6hs031kf8kc63bnaceuc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.flittybrit",
+            "certificate_hash": "ffed56a177e3da038a76525d15cf0cfea13aaea1"
+          }
+        },
+        {
+          "client_id": "734656877119-gnokuoio10ava35bg7lc6ad895dms5bq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.flittybrit",
+            "certificate_hash": "c66156830e868600e4d616f209738267e0c29bd3"
+          }
+        },
+        {
+          "client_id": "734656877119-g99943ni09m5f5tbtguugd9js9udpdse.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7YmHOfoVsYtujtn9J6QCNQxsMH-luNR8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "734656877119-39gtadvbffhotc42dlkp535kjit5phgr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:734656877119:android:f061e10325d79c28691e8a",
+        "android_client_info": {
+          "package_name": "com.example.flittybrit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "734656877119-qltsubcj8m9bohh7rpi4odjt7t7oh1un.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.flittybrit",
+            "certificate_hash": "79b66d3b3aa754186683d60ae72ed83e891b2f13"
+          }
+        },
+        {
+          "client_id": "734656877119-g99943ni09m5f5tbtguugd9js9udpdse.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7YmHOfoVsYtujtn9J6QCNQxsMH-luNR8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "734656877119-39gtadvbffhotc42dlkp535kjit5phgr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

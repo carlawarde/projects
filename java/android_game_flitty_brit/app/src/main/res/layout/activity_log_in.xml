@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".LogInActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="348dp"
+        android:layout_height="127dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/accessibility_text_logo"
+        app:srcCompat="@drawable/logo" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/google_sign_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp" />
+
+    <Button
+        android:id="@+id/offline_button"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/google_sign_in_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:width="180dp"
+        android:fontFamily="monospace"
+        android:onClick="offlineButtonClick"
+        android:text="@string/continue_offline"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+</android.widget.RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.flittybrit.MainMenu">
+
+    <item
+        android:id="@+id/overflow_sign_in"
+        android:title="@string/sign_in_button" />
+    <item
+        android:id="@+id/overflow_sign_out"
+        android:title="@string/sign_out_button" />
+</menu>

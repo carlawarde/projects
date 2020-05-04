@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Flitty Brit</string>
+    <string name="game_title_string">Flitty Brit</string>
+    <string name="email_address_string">Email Address</string>
+    <string name="sign_in_button">Sign-In</string>
+    <string name="password_hint">Password</string>
+    <string name="newGameButton">New Game</string>
+    <string name="leaderboard_button">Leaderboards</string>
+    <string name="store_button">Store</string>
+    <string name="sign_out_button">Sign-Out</string>
+    <string name="continue_offline">PLAY OFFLINE</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_menu">Menu</string>
+    <string name="accessibility_text_logo">Flitty Brit Logo</string>
+
+    <string name="user_email" />
+    <string name="user_score" />
+    <string name="accessibility_leaderboard_text">leaderboard logo</string>
+</resources>

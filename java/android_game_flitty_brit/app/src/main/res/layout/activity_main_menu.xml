@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainMenu">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/barLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/fui_transparent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/fui_bgGoogle">
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="348dp"
+        android:layout_height="69dp"
+        android:layout_below="@+id/barLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/accessibility_text_logo"
+        app:srcCompat="@drawable/logo" />
+
+    <Button
+        android:id="@+id/newGameButton"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:width="50dp"
+        android:background="@drawable/play_button"
+        android:fontFamily="monospace"
+        android:onClick="newGameButtonClick" />
+
+    <Button
+        android:id="@+id/leaderboardButton"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/newGameButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:width="200dp"
+        android:background="@drawable/board_button"
+        android:fontFamily="monospace"
+        android:onClick="leaderboardButtonClick" />
+
+</android.widget.RelativeLayout>
