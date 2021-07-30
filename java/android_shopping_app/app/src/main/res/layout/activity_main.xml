@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/log_in_box"
+    tools:context=".MainActivity">
+
+ <androidx.appcompat.widget.Toolbar
+     android:id="@+id/homeToolbar"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:background="#6C8691"
+     android:minHeight="?attr/actionBarSize"
+     android:theme="?attr/actionBarTheme">
+
+  <Button
+      android:id="@+id/logInBtn"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/login" />
+
+  <Button
+      android:id="@+id/cartBtn"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Cart"/>
+  <Button
+      android:id="@+id/ordersBtn"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Orders"/>
+  <Button
+      android:id="@+id/stockBtn"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Add Stock"/>
+ </androidx.appcompat.widget.Toolbar>
+
+ <com.google.android.material.tabs.TabLayout
+     android:id="@+id/genderTab"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_below="@+id/homeToolbar">
+
+  <com.google.android.material.tabs.TabItem
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/womenTab"
+      android:text="Womens" />
+
+  <com.google.android.material.tabs.TabItem
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/menTab"
+      android:text="Mens" />
+ </com.google.android.material.tabs.TabLayout>
+
+ <TextView
+     android:id="@+id/clothesTV"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_below="@+id/genderTab"
+     android:layout_centerHorizontal="true"
+     android:layout_marginTop="30dp"
+     android:layout_marginBottom="5dp"
+     android:fontFamily="sans-serif-black"
+     android:text="View Clothes"
+     android:textSize="16sp" />
+
+ <ImageButton
+     android:id="@+id/clothesButton"
+     android:layout_width="300dp"
+     android:layout_height="150dp"
+     android:layout_below="@+id/clothesTV"
+     android:layout_centerHorizontal="true"
+     android:layout_marginBottom="10dp"
+     app:srcCompat="@drawable/fui_ic_twitter_bird_white_24dp" />
+
+ <TextView
+     android:id="@+id/shoeTV"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_below="@+id/clothesButton"
+     android:layout_centerHorizontal="true"
+     android:layout_marginBottom="5dp"
+     android:fontFamily="sans-serif-black"
+     android:text="View Shoes"
+     android:textSize="16sp" />
+
+ <ImageButton
+     android:id="@+id/shoeButton"
+     android:layout_width="300dp"
+     android:layout_height="150dp"
+     android:layout_below="@+id/shoeTV"
+     android:layout_centerHorizontal="true"
+     android:layout_marginBottom="10dp"
+     app:srcCompat="@drawable/fui_ic_twitter_bird_white_24dp" />
+
+ <TextView
+     android:id="@+id/accTV"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_below="@+id/shoeButton"
+     android:layout_centerHorizontal="true"
+     android:layout_marginBottom="5dp"
+     android:fontFamily="sans-serif-black"
+     android:text="View Accessories"
+     android:textSize="16sp" />
+
+ <ImageButton
+     android:id="@+id/accButton"
+     android:layout_width="300dp"
+     android:layout_height="150dp"
+     android:layout_below="@+id/accTV"
+     android:layout_centerHorizontal="true"
+     app:srcCompat="@drawable/fui_ic_twitter_bird_white_24dp" />
+
+ <FrameLayout
+     android:id="@+id/contentWithToolbar"
+     android:layout_below="@+id/homeToolbar"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:elevation="2dp">
+ </FrameLayout>
+
+ <FrameLayout
+     android:id="@+id/content"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:elevation="3dp"></FrameLayout>
+
+</RelativeLayout>

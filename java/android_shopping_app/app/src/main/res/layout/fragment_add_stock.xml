@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/log_in_box"
+    tools:context=".order.AddStockFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="New Product"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="22sp"
+                    android:padding="10dp"
+                    android:layout_weight="1"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_weight="0.5"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Price"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_weight="0.5"/>
+            </TableRow>
+
+            <TableRow>
+                <EditText
+                    android:id="@+id/productName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_margin="10dp"
+                    android:hint="Product Name"
+                    android:layout_weight="0.5"/>
+                <EditText
+                    android:id="@+id/price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_margin="10dp"
+                    android:hint="Price"
+                    android:layout_weight="0.5"/>
+            </TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_weight="1"/>
+
+            <TableRow>
+                <RadioGroup
+                    android:id="@+id/genderGroup"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:layout_weight="1">
+
+                    <RadioButton
+                        android:id="@+id/female"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:focusedByDefault="true"
+                        android:text="Women"
+                        android:layout_weight="0.5"/>
+
+                    <RadioButton
+                        android:id="@+id/male"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Men"
+                        android:layout_weight="0.5"/>
+                </RadioGroup>
+            </TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Category"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <TableRow>
+                <RadioGroup
+                    android:id="@+id/categoryGroup"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:layout_weight="1">
+
+                    <RadioButton
+                        android:id="@+id/clothes"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:focusedByDefault="true"
+                        android:text="Clothes"
+                        android:layout_weight="0.33"/>
+
+                    <RadioButton
+                        android:id="@+id/shoes"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Shoes"
+                        android:layout_weight="0.33"/>
+
+                    <RadioButton
+                        android:id="@+id/accessories"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Accessories"
+                        android:layout_weight="0.33"/>
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Size"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_weight="0.5"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Quantity"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_weight="0.5"/>
+            </TableRow>
+
+            <TableRow>
+                <Spinner
+                    android:id="@+id/size1"
+                    android:layout_width="0dp"
+                    android:layout_weight=".5"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:dropDownWidth="wrap_content"
+                    android:nestedScrollingEnabled="true"
+                    android:overlapAnchor="false" />
+
+                <EditText
+                    android:id="@+id/quantity1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_weight="0.5"
+                    android:hint="Quantity"
+                    android:layout_margin="10dp"
+                    android:inputType="number"/>
+            </TableRow>
+
+            <TableRow>
+                <Spinner
+                    android:id="@+id/size2"
+                    android:layout_width="0dp"
+                    android:layout_weight=".5"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:dropDownWidth="wrap_content"
+                    android:nestedScrollingEnabled="true"
+                    android:overlapAnchor="false" />
+
+                <EditText
+                    android:id="@+id/quantity2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_weight="0.5"
+                    android:layout_margin="10dp"
+                    android:hint="Quantity" />
+            </TableRow>
+
+            <TableRow>
+                <Spinner
+                    android:id="@+id/size3"
+                    android:layout_width="0dp"
+                    android:layout_weight=".5"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:dropDownWidth="wrap_content"
+                    android:nestedScrollingEnabled="true"
+                    android:overlapAnchor="false" />
+
+                <EditText
+                    android:id="@+id/quantity3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_weight="0.5"
+                    android:hint="Quantity"
+                    android:layout_margin="10dp"
+                    android:inputType="number"/>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Style"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_weight="0.33"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Brand"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_weight="0.33"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Colour"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_weight="0.33"/>
+
+            </TableRow>
+
+            <TableRow>
+                <Spinner
+                    android:id="@+id/style"
+                    android:layout_width="0dp"
+                    android:layout_weight=".33"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:dropDownWidth="wrap_content"
+                    android:dropDownVerticalOffset="50dp"
+                    android:nestedScrollingEnabled="true"
+                    android:overlapAnchor="false" />
+
+                <Spinner
+                    android:id="@+id/brand"
+                    android:layout_width="0dp"
+                    android:layout_weight=".33"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:dropDownWidth="wrap_content"
+                    android:dropDownVerticalOffset="50dp"
+                    android:nestedScrollingEnabled="true"
+                    android:overlapAnchor="false" />
+
+                <Spinner
+                    android:id="@+id/colour"
+                    android:layout_width="0dp"
+                    android:layout_weight=".33"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:dropDownWidth="wrap_content"
+                    android:nestedScrollingEnabled="true"
+                    android:overlapAnchor="false" />
+            </TableRow>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Product Picture"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <Button
+                android:id="@+id/uploadImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Upload Image"/>
+
+            <ImageView
+                android:id="@+id/productPic"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_margin="30dp"/>
+
+            <Button
+                android:id="@+id/finish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"/>
+
+        </TableLayout>
+    </ScrollView>
+</RelativeLayout>

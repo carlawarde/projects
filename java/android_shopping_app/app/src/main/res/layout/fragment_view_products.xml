@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_view_products"
+    android:background="@drawable/log_in_box"
+    tools:context=".products.ViewProductsFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8DABAE"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintTop_toBottomOf="@+id/homeToolbar">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:id="@+id/styleTV"
+                    android:layout_width="0dp"
+                    android:layout_weight=".25"
+                    android:layout_height="wrap_content"
+                    android:text="@string/style" />
+
+                <TextView
+                    android:id="@+id/sizeTV"
+                    android:layout_width="0dp"
+                    android:layout_weight=".25"
+                    android:layout_height="wrap_content"
+                    android:text="@string/size" />
+
+                <TextView
+                    android:id="@+id/colourTV"
+                    android:layout_width="0dp"
+                    android:layout_weight=".25"
+                    android:layout_height="wrap_content"
+                    android:text="@string/colour" />
+
+                <TextView
+                    android:id="@+id/brandTV"
+                    android:layout_width="0dp"
+                    android:layout_weight=".25"
+                    android:layout_height="wrap_content"
+                    android:text="@string/brand" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <Spinner
+                    android:id="@+id/styleSpinner"
+                    android:layout_width="0dp"
+                    android:layout_weight=".25"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:dropDownWidth="wrap_content"
+                    android:dropDownVerticalOffset="50dp"
+                    android:nestedScrollingEnabled="true"
+                    android:overlapAnchor="false" />
+
+                <Spinner
+                    android:id="@+id/sizeSpinner"
+                    android:layout_width="0dp"
+                    android:layout_weight=".25"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:dropDownWidth="wrap_content"
+                    android:nestedScrollingEnabled="true"
+                    android:overlapAnchor="false" />
+
+                <Spinner
+                    android:id="@+id/colourSpinner"
+                    android:layout_width="0dp"
+                    android:layout_weight=".25"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:dropDownWidth="wrap_content"
+                    android:nestedScrollingEnabled="true"
+                    android:overlapAnchor="false" />
+
+                <Spinner
+                    android:id="@+id/brandSpinner"
+                    android:layout_width="0dp"
+                    android:layout_weight=".25"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:dropDownWidth="wrap_content"
+                    android:dropDownVerticalOffset="50dp"
+                    android:nestedScrollingEnabled="true"
+                    android:overlapAnchor="false" />
+
+            </TableRow>
+
+            <TableRow>
+                <Button
+                    android:id="@+id/filter"
+                    android:layout_width="0dp"
+                    android:layout_weight=".5"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/filter" />
+
+                <Button
+                    android:id="@+id/resetFilters"
+                    android:layout_width="0dp"
+                    android:layout_weight=".5"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/resetFilters" />
+
+            </TableRow>
+
+        </TableLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/toolbar"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

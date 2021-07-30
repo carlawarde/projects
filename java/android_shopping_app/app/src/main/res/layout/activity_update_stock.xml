@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/log_in_box">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="UpdateStock"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:padding="10dp"
+            android:layout_weight="1"/>
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Size"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_weight="0.5"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Quantity"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_weight="0.5"/>
+        </TableRow>
+        <TableRow>
+            <Spinner
+                android:id="@+id/size1"
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:dropDownWidth="wrap_content"
+                android:nestedScrollingEnabled="true"
+                android:overlapAnchor="false" />
+
+            <EditText
+                android:id="@+id/quantity1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_weight="0.5"
+                android:hint="Quantity"
+                android:layout_margin="10dp"
+                android:inputType="number"/>
+        </TableRow>
+
+        <TableRow>
+            <Spinner
+                android:id="@+id/size2"
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:dropDownWidth="wrap_content"
+                android:nestedScrollingEnabled="true"
+                android:overlapAnchor="false" />
+
+            <EditText
+                android:id="@+id/quantity2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_weight="0.5"
+                android:layout_margin="10dp"
+                android:hint="Quantity" />
+        </TableRow>
+
+        <TableRow>
+            <Spinner
+                android:id="@+id/size3"
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:dropDownWidth="wrap_content"
+                android:nestedScrollingEnabled="true"
+                android:overlapAnchor="false" />
+
+            <EditText
+                android:id="@+id/quantity3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_weight="0.5"
+                android:hint="Quantity"
+                android:layout_margin="10dp"
+                android:inputType="number"/>
+        </TableRow>
+        <Button
+            android:id="@+id/confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20px"
+            android:layout_gravity="center"
+            android:text="Confirm"/>
+    </TableLayout>
+</RelativeLayout>
