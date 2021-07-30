@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CS4227_project</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="colour">Colour</string>
+    <string name="size">Size</string>
+    <string name="filter">Filter Products</string>
+    <string name="style">Style</string>
+    <string name="brand">Brand</string>
+    <string name="resetFilters">Reset Filters</string>
+    <string name="login">Log In</string>
+</resources>

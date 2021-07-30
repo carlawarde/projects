@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/log_in_box"
+    tools:context=".order.adapter_pattern.ViewOrdersFragment">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Your Orders"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-black"
+        android:textSize="32sp"
+        android:textColor="#6C8691"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/simpleRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/material_blue_grey_800"
+        android:layout_marginTop="40dp"
+        android:dividerHeight="1dp"/>
+
+</FrameLayout>
